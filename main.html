@@ -33,9 +33,9 @@
         <!-- STAGE1問題セクション　ここから -->
         <section class="section">
           <div class="container">
-            <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STEP1</span>監禁部屋から脱出しよう！</h2>
-            <p class="text-center">まずは金庫に書かれている謎を解こう。</p>
-            <p class="text-center">困ったときは、ヒントがある。なるべく見ないようにゲームを進めていこう。</p>
+            <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage"></span>監禁部屋から脱出しよう！</h2>
+            <p class="text-center">まずは金庫に書かれている謎を解いて鍵をゲットしよう。</p>
+            <p class="text-center">本当に困った時にはマネージャーからヒントをもらおう。</p>
   
             <div class="container">
               <figure class="image__container">
@@ -58,7 +58,7 @@ Youtube貼り付けここまで -->
         <!-- STAGE1解答入力セクション　ここから -->
         <section class="section bg-color--keycolor">
           <div class="container">
-            <h2 class="section-title"><span class="section-title__stage">STAGE：1</span>キーワードを入力</h2>
+            <h2 class="section-title"><span class="section-title__stage">STEP1</span>次の謎を解いて数字を入力</h2>
             <!------------------------------------------------------------------------------------------------------------
               解答入力欄のコンポーネントです。入力欄・送信ボタン・エラーメッセージを表示します。
               v-bind:correct="correctAnswer['stage1']['q1']" は正解の解答を指します。
@@ -83,10 +83,10 @@ Youtube貼り付けここまで -->
         <section v-if="clear['stage1']" v-bind:class="{isClear:clear['stage1']}"  class="section section--clear bg-color--gray">
           <div class="container">
             <div class="clear-message">
-              <div class="clear-message__title">STAGE：１  クリア！</div>
-              <div class="clear-message__content">家庭科室の扉が開いた！<br>
-                さぁ先生を助けるため<br>
-                ３つステージの謎をとき、暗号を見つけ出そう！</div>
+              <div class="clear-message__title">STEP１  クリア！</div>
+              <div class="clear-message__content">鍵を２個手に入れた！<br>
+                「監禁部屋の鍵」と書いてある鍵を使って監禁部屋から出よう<br>
+                </div>
               <button v-on:click="nextStage('stage1')" onclick="location.href='#sectionStage2'" class="clear-message__btn btn">次のステージへ<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
             </div>
           </div>
@@ -105,10 +105,10 @@ Youtube貼り付けここまで -->
         <section>
           <div class="section">
             <div class="container">
-              <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：2</span>黒板に書かれている謎を解け！</h2>
-              <p class="text-center">家庭科室に入ることができた！<br>
-                すぐに目に入ったのは黒板にある４つの謎。<br>
-                これらを解くことで、きっと次のステップに繋がるはずだ！</p>
+              <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STEP2</span>地図に書かれている謎を解いてこの偽の会場から出よう！</h2>
+              <p class="text-center">監禁部屋から出ると目の前に地図が置いてあった。<br>
+                その地図にはこんな謎が書いてあった<br>
+              これを解いて偽の会場の出口を導こう！</p>
             </div>
           </div>
           <div class="stage-column__container section bg-color--keycolor">
